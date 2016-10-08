@@ -1,0 +1,97 @@
+.mdl-layout__header {
+    background-color: #FFD520;
+}
+
+.mdl-layout__drawer-button {
+    color: black !important;
+}
+
+.mdl-button--accent {
+    background-color: #6AC4AE !important;
+}
+
+.mdl-button--colored {
+    background-color: #FFD520 !important;
+}
+
+.mdl-textfield__label:after {
+    background-color: #6AC4AE !important;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-right-5 {
+    margin-left: 5px;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: #B2B2B2 !important;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.hide-me {
+    display: none;
+    visibility: hidden;
+}
+
+.height100 {
+    height: 100px;
+    min-height: 100px;
+}
+
+.mdl-data-table__cell--non-numeric {
+    font-size: 16px;
+}
+
+th.mdl-data-table__cell--non-numeric {
+    font-size: 16px;
+}
+
+.fontBigger {
+    font-size: 16px;
+}
+
+a {
+    color: #007f7a;
+}
+
+a:visited {
+    color: #007c97;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.logo {
+    width: 3rem;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+    display: inline-block;
+}
+
+.mdl-data-table {
+    width: 100%;
+}
+
+.alignBottom {
+    vertical-align: bottom;
+}

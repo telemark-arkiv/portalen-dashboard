@@ -1,6 +1,7 @@
 'use strict'
 
 const Hapi = require('hapi')
+const Nes = require('nes')
 const Chairo = require('chairo')
 const Seneca = require('seneca')()
 const vision = require('vision')
@@ -16,6 +17,7 @@ server.connection({
 
 const plugins = [
   {register: Chairo, options: {seneca: Seneca}},
+  {register: Nes},
   {register: vision},
   {register: inert},
   {register: portalenService}
@@ -51,6 +53,24 @@ server.register(plugins, error => {
       auth: false
     }
   })
+
+  server.route({
+    method: 'GET',
+    path: '/api/update/{msg}',
+    config: {
+    handler: (request, reply) => {
+      const msg = request.params.msg
+
+      server.publish('/updates', msg)
+
+      reply({success: true})
+    },
+      description: 'Update msgs'
+  }
+  })
+
+
+  server.subscription('/updates')
 
   server.seneca.use(senecaPing)
 })
