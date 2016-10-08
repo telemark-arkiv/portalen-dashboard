@@ -1,0 +1,62 @@
+{
+  "name": "portalen-dashboard",
+  "description": "Dashboardview av portalen",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "coverage": "tap test/**/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js",
+    "standard-fix": "standard --fix",
+    "start": "node standalone.js"
+  },
+  "keywords": [
+    "dashboard",
+    "portalen",
+    "microsite",
+    "Telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/portalen-dashboard.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/portalen-dashboard/issues"
+  },
+  "louie": {
+    "versionName": "Australian Crawl",
+    "versionVideoUrl": "https://www.youtube.com/watch?v=URgPL9AjkbQ",
+    "systemName": "portalen-dashboard"
+  },
+  "standard": {
+    "ignore": [
+      "public"
+    ]
+  },
+  "devDependencies": {
+    "coveralls": "2.11.14",
+    "nsp": "2.6.2",
+    "standard": "8.3.0",
+    "tap": "7.1.2"
+  },
+  "dependencies": {
+    "chairo": "2.2.1",
+    "handlebars": "4.0.5",
+    "hapi": "15.1.1",
+    "inert": "4.0.2",
+    "nes": "6.3.1",
+    "seneca": "3.2.1",
+    "vision": "4.1.0",
+    "wreck": "10.0.0"
+  }
+}
