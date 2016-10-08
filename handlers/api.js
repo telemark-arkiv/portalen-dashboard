@@ -1,9 +1,10 @@
 'use strict'
 
 module.exports.updateMsgs = (request, reply) => {
+  const server = request.server
   const msg = request.params.msg
 
-  request.Nes.publish('/updates', msg)
+  server.publish('/updates', msg)
 
   reply({success: true})
 }

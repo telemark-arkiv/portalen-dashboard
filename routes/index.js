@@ -6,8 +6,8 @@ module.exports = [
   {
     method: 'GET',
     path: '/',
+    handler: handlers.showFrontpage,
     config: {
-      handler: handlers.showFrontpage,
       description: 'Show frontpage'
     }
   }

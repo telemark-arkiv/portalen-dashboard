@@ -54,22 +54,6 @@ server.register(plugins, error => {
     }
   })
 
-  server.route({
-    method: 'GET',
-    path: '/api/update/{msg}',
-    config: {
-    handler: (request, reply) => {
-      const msg = request.params.msg
-
-      server.publish('/updates', msg)
-
-      reply({success: true})
-    },
-      description: 'Update msgs'
-  }
-  })
-
-
   server.subscription('/updates')
 
   server.seneca.use(senecaPing)

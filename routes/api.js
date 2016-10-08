@@ -5,9 +5,9 @@ const handlers = require('../handlers/api')
 module.exports = [
   {
     method: 'GET',
-    path: '/api/update/{msg}',
+    path: '/api/updates/{msg}',
+    handler: handlers.updateMsgs,
     config: {
-      handler: handlers.updateMsgs,
       description: 'Update msgs'
     }
   }
