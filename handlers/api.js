@@ -2,9 +2,9 @@
 
 module.exports.updateMsgs = (request, reply) => {
   const server = request.server
-  const msg = request.params.msg
+  const paylod = request.payload
 
-  server.publish('/updates', msg)
+  server.publish('/updates', paylod)
 
   reply({success: true})
 }

@@ -4,8 +4,8 @@ const handlers = require('../handlers/api')
 
 module.exports = [
   {
-    method: 'GET',
-    path: '/api/updates/{msg}',
+    method: 'post',
+    path: '/api/updates',
     handler: handlers.updateMsgs,
     config: {
       description: 'Update msgs'
