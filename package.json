@@ -51,7 +51,7 @@
     "tap": "8.0.1"
   },
   "dependencies": {
-    "chairo": "2.2.1",
+    "chairo": "3.0.0",
     "handlebars": "4.0.6",
     "hapi": "15.2.0",
     "inert": "4.0.2",
