@@ -45,10 +45,10 @@
   },
   "devDependencies": {
     "browserify": "14.0.0",
-    "coveralls": "2.11.15",
+    "coveralls": "2.11.16",
     "nsp": "2.6.2",
     "standard": "8.6.0",
-    "tap": "9.0.3"
+    "tap": "10.0.2"
   },
   "dependencies": {
     "chairo": "3.0.0",
