@@ -1,7 +1,7 @@
 {
   "name": "portalen-dashboard",
   "description": "Dashboardview av portalen",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
