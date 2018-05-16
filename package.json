@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "browserify": "14.0.0",
-    "coveralls": "2.11.16",
+    "coveralls": "2.13.3",
     "nsp": "2.6.2",
     "standard": "8.6.0",
     "tap": "11.1.5"
