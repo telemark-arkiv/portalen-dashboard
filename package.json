@@ -44,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "browserify": "14.0.0",
+    "browserify": "16.2.2",
     "coveralls": "2.11.16",
     "nsp": "2.6.2",
     "standard": "8.6.0",
